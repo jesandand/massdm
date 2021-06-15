@@ -34,6 +34,7 @@ async def userinfo(ctx, user: discord.Member):
     
 @commands.has_permissions(administrator=True)
 @client.command(pass_context = True)
+
 async def send(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
@@ -44,4 +45,4 @@ async def send(ctx, *, content: str):
                 await client.say("DM can't Sent To : {} :x: ".format(member))
 
 
-client.run("YOUR BOT'S TOKEN HERE")                
+client.run("ODUzNTI2ODk1MDMwMDQyNjQ0.YMWq3Q.OvXzNmCfs6Vqu__K4LMmi8JwBBk")                
